@@ -54,7 +54,11 @@
 
    /* Hero section end */
 
-    /* media gallery section start */
+    /* gallery section start */
+
+    .gallery{
+      background-color: white;
+    }
     .media-gallery {
       display: flex;
       justify-content: center; /* Centra horizontalmente el contenido */
@@ -74,5 +78,77 @@
     margin: 20px 0;
    }
 
-   /* media gallery section end */
+  .reviews {
+
+  background-color: #00cccc;
+  padding: 10px;
+  border-radius: 8px;
+  color: black;
+  max-width: 1600px;
+  margin: auto;
+  
+  }
+  
+  h2 {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .review-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que las columnas fluyan hacia abajo si es necesario */
+  }
+  
+  .review {
+    font-size: 15px;
+    flex: 1;
+    margin: 0 5px;
+    min-width: 150px; /* Ancho mínimo para que se envuelva */
+  }
+  
+  .review-author {
+
+    font-weight: bold ;
+    font-style: italic;
+    margin: 0;
+  }
+
+  .review-body {
+    
+    margin: 0;
+    word-wrap: break-word; /* Permite el corte de palabras largas */
+  }
+
+   /*  gallery section end */
+
+  /*  about section start */
+   .footer {
+    background-color: #555;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 30px; /* Tamaño de los íconos */
+    height: 30px;
+    filter: invert(1); /* Cambia a blanco si es necesario */
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  /*  about section end */
   
