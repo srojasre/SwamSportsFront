@@ -4,6 +4,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component'; // Asegúrate de que esta línea esté presente
 import { HomeComponent } from './home/home.component';
 import { MiniCatalogComponent } from './mini-catalog/mini-catalog.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductoService } from './producto.service';
 
 @NgModule({
   declarations: [		
@@ -13,9 +15,10 @@ import { MiniCatalogComponent } from './mini-catalog/mini-catalog.component';
       MiniCatalogComponent
    ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProductoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,31 @@
-<p>
-catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd
-catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd
-catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd catalogo pequeño xd
-</p>
+<div class="container">
+    <aside class="filters">
+      <h3>Filtros</h3>
+      <div class="filter">
+        <h4>Disponibilidad</h4>
+      </div>
+      <div class="filter">
+        <h4>Precio</h4>
+      </div>
+      <div class="filter">
+        <h4>SALE</h4>
+      </div>
+      <div class="filter">
+        <h4>Edición especial</h4>
+      </div>
+    </aside>
+  
+    <main class="products">
+      <h2>Gorros de natación</h2>
+      <div *ngIf="productos.length > 0; else noProducts" class="product-list">
+        <div class="product" *ngFor="let producto of productos">
+          <img [src]="producto.imagenURL" alt="{{producto.nombreProducto}}"> 
+          <h3>{{producto.nombreProducto}}</h3>
+          <!-- <p>{{producto.precioProducto | currency}}</p> -->
+        </div>
+      </div>
+      <ng-template #noProducts>
+        <p>No hay productos disponibles.</p>
+      </ng-template>
+    </main>
+  </div>
