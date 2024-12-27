@@ -1,0 +1,78 @@
+.home-page {
+    font-family: 'Chillax-font'; /* Ajusta la fuente según tu diseño */
+    margin: 0;
+    padding: 0;
+  }
+  /* Hero section start */
+  .hero-section {
+    position: relative;
+    background: url('/assets/images/piscina.png') no-repeat center center/cover; /* Imagen de fondo */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00FFFF; /* Color del texto */
+    text-align: center;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido para contraste */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo img {
+    width: 750px; /* Ajusta el tamaño del logo */
+    margin-bottom: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem; /* Tamaño del texto principal */
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem; /* Tamaño del texto secundario */
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-text h1 {
+      font-size: 2rem; /* Tamaño más pequeño en pantallas pequeñas */
+    }
+    .hero-text p {
+      font-size: 1.2rem;
+    }
+    .logo img {
+      width: 150px; /* Tamaño del logo ajustado */
+    }
+  }
+
+   /* Hero section end */
+
+    /* media gallery section start */
+    .media-gallery {
+      display: flex;
+      justify-content: center; /* Centra horizontalmente el contenido */
+      padding: 20px;
+      background-color: #00FFFF;           /* Espaciado opcional alrededor del video */
+    }
+    
+    .media-gallery video {
+      width: 1200px;            
+      height: auto;
+      max-width: 100%;       
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+   .media-gallery .instagram-post{
+    margin: 20px 0;
+   }
+
+   /* media gallery section end */
+  

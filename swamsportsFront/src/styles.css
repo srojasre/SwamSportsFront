@@ -4,3 +4,23 @@
     src: url('/assets/fonts/Chillax-Variable.ttf');
     
 }
+
+body, html, app-root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f0f0f0; /* Ajusta según tus necesidades */
+  }
+
+
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegúrate de que esté encima del contenido */
+  }
+  
+  /* Ajustar este valor según la altura de la barra */
+  .main-content {
+    margin-top: 60px; 
+  }
