@@ -6,17 +6,23 @@ import { HomeComponent } from './home/home.component';
 import { MiniCatalogComponent } from './mini-catalog/mini-catalog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductoService } from './producto.service';
+import { FormsModule } from '@angular/forms';
+import { AdminTrollComponent } from './admin-troll/admin-troll.component';
+import { PruebasComponent } from './pruebas/pruebas.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [				
     AppComponent,
     NavbarComponent, // Asegúrate de declarar aquí el componente
       HomeComponent,
-      MiniCatalogComponent
+      MiniCatalogComponent,
+      AdminTrollComponent,
+      PruebasComponent
    ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ProductoService],
   bootstrap: [AppComponent]
