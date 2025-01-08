@@ -9,15 +9,19 @@ import { ProductoService } from './producto.service';
 import { FormsModule } from '@angular/forms';
 import { AdminTrollComponent } from './admin-troll/admin-troll.component';
 import { PruebasComponent } from './pruebas/pruebas.component';
+import { HomeColombiaEditionComponent } from './home-colombia-edition/home-colombia-edition.component';
+import { CatalogoGeneralComponent } from './catalogo-general/catalogo-general.component';
 
 @NgModule({
-  declarations: [				
+  declarations: [						
     AppComponent,
     NavbarComponent, // Asegúrate de declarar aquí el componente
       HomeComponent,
       MiniCatalogComponent,
       AdminTrollComponent,
-      PruebasComponent
+      PruebasComponent,
+      HomeColombiaEditionComponent,
+      CatalogoGeneralComponent
    ],
   imports: [
     BrowserModule,

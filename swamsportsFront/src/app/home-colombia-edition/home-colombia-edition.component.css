@@ -1,0 +1,81 @@
+.home-page-colombia .page-section {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('/assets/images/fondo1.png') no-repeat center center/cover;
+  }
+
+  .home-page-colombia .recomendados {
+    background-color: #fff8cf;
+  }
+
+  .home-page-colombia .decoracion-final {
+    background: url('/assets/images/fondo2.png') no-repeat center center/cover;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .decoracion-final .text {
+    font-family: 'Chillax-font';
+    font-size: 130px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+  }
+
+  .decoracion-final img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .text {
+    font-family: 'Chillax-font';
+    width: 30%;
+    color: #ffd700;
+    padding: 4px;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .text span.rojo {
+    color: #e4002b;
+    font-weight: bold;
+  }
+
+  .text span.azul {
+    color: #004b87;
+    font-weight: bold;
+  }
+
+  .text span.amarillo {
+    color: #ffd700;
+    font-weight: bold;
+  }
+
+  .image {
+    width: 45%;
+  }
+
+  .image img {
+    width: 100%;
+    border-radius: 10px;
+  }
