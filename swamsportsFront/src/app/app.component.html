@@ -1,21 +1,9 @@
-
-
 <main class="main">
-
-
   <div class="header">
-    <app-navbar></app-navbar> <!-- TODO ajustar la barra de arriba -->
+    <app-navbar></app-navbar> <!-- Mantén la barra de navegación si es fija -->
   </div>
 
   <div class="main-content">
-    <app-home></app-home>
-    
+    <router-outlet></router-outlet> <!-- Aquí Angular renderizará las rutas -->
   </div>
-  
-
-
 </main>
-
-
-
-<router-outlet />

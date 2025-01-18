@@ -1,0 +1,26 @@
+<main>
+<div class="product-detail">
+  <img [src]="producto?.imagenURL" alt="{{ producto?.nombreProducto }}" class="product-image" />
+  <div class="product-info">
+    <h1>{{ producto?.nombreProducto }}</h1>
+    <p><strong>Precio:</strong> {{ producto?.precioProducto | currency:'COP' }}</p>
+    <p><strong>Descripción:</strong> {{ producto?.descripcionProducto }}</p>
+    <p><strong>Caracteristicas: </strong>Material: Silicona Tamaño: Universal, para todas las edades</p>
+    <p><strong>Cantidad: </strong></p>
+    <div class="quantity-selector">
+      
+      
+      <button (click)="disminuirStock()">-</button>
+      <span>{{cantidadCarrito}}</span>
+      <button (click)="agregarStock()" >+</button>
+    </div>
+    <div class="actions">
+      <button (click)="agregarAlCarrito()">Añadir al carrito</button>
+      <p>¿Necesitas ayuda?</p>
+    </div>
+  </div>
+</div>
+
+<section class="reviews"></section>
+<app-reviews></app-reviews>
+</main>

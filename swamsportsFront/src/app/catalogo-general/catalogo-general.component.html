@@ -1,3 +1,20 @@
-<p>
-  catalogo-general works!
-</p>
+<div class="container">
+  <main class="products">
+    <div *ngIf="productos.length > 0 else noProducts" class="carousel-wrapper">
+      <button class="prev" (click)="prevSlide()">&#10094;</button>
+      <div class="carousel">
+        <div 
+          class="product" 
+          *ngFor="let producto of productos; let i = index" 
+          [style.transform]="'translateX(' + (- currentIndex * 100) + '%)'"
+        >
+          <img [src]="producto.imagenURL" alt="{{producto.nombreProducto}}">
+        </div>
+      </div>
+      <button class="next" (click)="nextSlide()">&#10095;</button>
+    </div>
+    <ng-template #noProducts>
+      <p>No hay productos disponibles.</p>
+    </ng-template>
+  </main>
+</div>

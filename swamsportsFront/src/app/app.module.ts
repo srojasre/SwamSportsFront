@@ -11,9 +11,11 @@ import { AdminTrollComponent } from './admin-troll/admin-troll.component';
 import { PruebasComponent } from './pruebas/pruebas.component';
 import { HomeColombiaEditionComponent } from './home-colombia-edition/home-colombia-edition.component';
 import { CatalogoGeneralComponent } from './catalogo-general/catalogo-general.component';
+import { ProductoDetailComponent } from './producto-detail/producto-detail.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 @NgModule({
-  declarations: [						
+  declarations: [								
     AppComponent,
     NavbarComponent, // Asegúrate de declarar aquí el componente
       HomeComponent,
@@ -21,12 +23,15 @@ import { CatalogoGeneralComponent } from './catalogo-general/catalogo-general.co
       AdminTrollComponent,
       PruebasComponent,
       HomeColombiaEditionComponent,
-      CatalogoGeneralComponent
+      CatalogoGeneralComponent,
+      ProductoDetailComponent,
+      ReviewsComponent
    ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [ProductoService],
   bootstrap: [AppComponent]

@@ -9,6 +9,7 @@ import { Prodcuto } from './Producto';
 export class ProductoService {
 
 private apiURL = 'http://localhost:8080/api/productos'
+
   
 
   constructor(private http: HttpClient) { 
@@ -17,6 +18,10 @@ private apiURL = 'http://localhost:8080/api/productos'
 
   getData(): Observable<Prodcuto[]> {
     return this.http.get<Prodcuto[]>(this.apiURL)
+  }
+
+  getProductoById(id: number): Observable<Prodcuto> {
+    return this.http.get<Prodcuto>(`${this.apiURL}/${id}`)
   }
 
 

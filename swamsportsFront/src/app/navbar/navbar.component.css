@@ -32,6 +32,17 @@
     color: #ff0800;
   }
 
+  .nav-links a {
+    color: #00FFFF;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Transición suave del color */
+  }
+  
+  .nav-links a:hover {
+    color: #ff0800; /* Color al pasar el ratón */
+  }
+
 
   
   .special1 {
