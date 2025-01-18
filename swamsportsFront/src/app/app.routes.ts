@@ -4,6 +4,7 @@ import { HomeColombiaEditionComponent } from './home-colombia-edition/home-colom
 import { HomeComponent } from './home/home.component';
 import { ProductoDetailComponent } from './producto-detail/producto-detail.component';
 import { NotFoundComponent } from '../notFound/notFound.component';
+import { MiniCatalogComponent } from './mini-catalog/mini-catalog.component';
 
 export const routes: Routes = [
 
@@ -12,6 +13,8 @@ export const routes: Routes = [
     {path: 'colombia', component: HomeColombiaEditionComponent},
     { path: '', component: HomeComponent }, // Página principal
     { path: 'producto/:id', component: ProductoDetailComponent },
-    {path: '**', pathMatch: 'full', component:NotFoundComponent}
+    {path: 'catalogo', component: MiniCatalogComponent},
+    {path: '**', pathMatch: 'full', component:NotFoundComponent},
+    
     
 ];

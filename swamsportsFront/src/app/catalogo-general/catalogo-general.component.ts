@@ -16,6 +16,8 @@ export class CatalogoGeneralComponent implements OnInit {
 
   productos: Prodcuto[] = []; 
 
+  itemsVisible = 3; 
+
 
   constructor(private productoService: ProductoService) { }
 
@@ -33,10 +35,10 @@ export class CatalogoGeneralComponent implements OnInit {
   currentIndex = 0;
 
   nextSlide() {
-    if (this.currentIndex < this.productos.length - 1) {
+    if (this.currentIndex < this.productos.length - this.itemsVisible) {
       this.currentIndex++;
     } else {
-      this.currentIndex = 0; 
+      this.currentIndex = 0; // Opcional: reiniciar al inicio
     }
   }
 
@@ -44,8 +46,12 @@ export class CatalogoGeneralComponent implements OnInit {
     if (this.currentIndex > 0) {
       this.currentIndex--;
     } else {
-      this.currentIndex = this.productos.length - 1; 
+      this.currentIndex = this.productos.length - this.itemsVisible; // Opcional: ir al final
     }
+  }
+
+  verMas() {
+    // Implementa la funcionalidad "Ver más" aquí
   }
 
 }

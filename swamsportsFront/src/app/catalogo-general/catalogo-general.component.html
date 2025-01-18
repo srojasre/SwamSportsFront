@@ -2,11 +2,10 @@
   <main class="products">
     <div *ngIf="productos.length > 0 else noProducts" class="carousel-wrapper">
       <button class="prev" (click)="prevSlide()">&#10094;</button>
-      <div class="carousel">
+      <div class="carousel" [style.transform]="'translateX(' + (-currentIndex * (100 / itemsVisible)) + '%)'">
         <div 
           class="product" 
-          *ngFor="let producto of productos; let i = index" 
-          [style.transform]="'translateX(' + (- currentIndex * 100) + '%)'"
+          *ngFor="let producto of productos; let i = index"
         >
           <img [src]="producto.imagenURL" alt="{{producto.nombreProducto}}">
         </div>

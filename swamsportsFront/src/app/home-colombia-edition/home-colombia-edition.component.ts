@@ -18,4 +18,8 @@ export class HomeColombiaEditionComponent implements OnInit {
   ngOnInit() {
   }
 
+  navigateToUrl(url: string){
+    window.location.href = url;
+  }
+
 }

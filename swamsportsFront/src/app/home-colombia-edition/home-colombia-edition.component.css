@@ -87,3 +87,18 @@
     width: 100%;
     border-radius: 10px;
   }
+
+  .boton-colombia {
+    font-family: 'Chillax-font';
+    background-color: #eee6b5;
+    border: none;
+    border-radius: 10px;
+    width: 130px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+  .boton-colombia:hover{
+    background-color: #ccc69d;
+  }

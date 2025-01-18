@@ -14,9 +14,10 @@ import { CatalogoGeneralComponent } from './catalogo-general/catalogo-general.co
 import { ProductoDetailComponent } from './producto-detail/producto-detail.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { NotFoundComponent } from '.c:/Users/sroja/Downloads/SwamSportsFront/swamsportsFront/src/notFound/notFound.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [									
+  declarations: [										
     AppComponent,
     NavbarComponent, // Asegúrate de declarar aquí el componente
       HomeComponent,
@@ -27,7 +28,8 @@ import { NotFoundComponent } from '.c:/Users/sroja/Downloads/SwamSportsFront/swa
       CatalogoGeneralComponent,
       ProductoDetailComponent,
       ReviewsComponent,
-      NotFoundComponent
+      NotFoundComponent,
+      LoginComponent
    ],
   imports: [
     BrowserModule,
