@@ -1,15 +1,16 @@
 <div class="login-form">
-  <h2>Iniciar Sesión</h2>
+  <h2>Acceso</h2>
   <form (ngSubmit)="onLogin()">
     <div>
-      <label>Usuario</label>
+      <label>E-mail: </label>
       <input type="text" [(ngModel)]="nombreUsuario" name="nombreUsuario" required />
     </div>
     <div>
-      <label>Contraseña</label>
+      <label>Contraseña: </label>
       <input type="password" [(ngModel)]="contrasenia" name="contrasena" required />
     </div>
-    <button type="submit">Iniciar sesión</button>
+    <a href="">Olvide mi contraseña</a>
+    <button type="submit">Acceso</button>
   </form>
   <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
 </div>

@@ -13,7 +13,6 @@ import { HomeColombiaEditionComponent } from './home-colombia-edition/home-colom
 import { CatalogoGeneralComponent } from './catalogo-general/catalogo-general.component';
 import { ProductoDetailComponent } from './producto-detail/producto-detail.component';
 import { ReviewsComponent } from './reviews/reviews.component';
-import { NotFoundComponent } from '.c:/Users/sroja/Downloads/SwamSportsFront/swamsportsFront/src/notFound/notFound.component';
 import { LoginComponent } from './login/login.component';
 
 @NgModule({
@@ -28,7 +27,6 @@ import { LoginComponent } from './login/login.component';
       CatalogoGeneralComponent,
       ProductoDetailComponent,
       ReviewsComponent,
-      NotFoundComponent,
       LoginComponent
    ],
   imports: [

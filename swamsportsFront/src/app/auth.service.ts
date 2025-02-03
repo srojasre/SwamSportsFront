@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private baseURL = 'http://localhost:8080/api/usuario';
+  private baseURL = 'http://localhost:8080/api/usuarios';
   private tokenKey = 'authToken';
 
 
@@ -19,7 +19,7 @@ constructor(private http: HttpClient) { }
   login(nombreUsuario: string, contrasenia: string): Observable<string>{
 
     const loginRequest = {nombreUsuario, contrasenia}
-    return this.http.post<string>(`${this.baseURL}/login`, loginRequest)
+    return this.http.post<string>(`${this.baseURL}/usuario/login`, loginRequest)
 
   }
   logout():void{

@@ -1,0 +1,82 @@
+/* Estilos generales para el formulario de inicio de sesión */
+.login-form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 200px auto 50px auto; /* Añade un margen superior de 200px */
+    
+  }
+  
+  /* Título del formulario */
+  .login-form h2 {
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Campos de entrada */
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* Botón de acceso */
+  .login-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #808080;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-form button[type="submit"]:hover {
+    background-color: #696969;
+  }
+  
+  /* Mensaje de error */
+  .login-form .error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Enlace para crear cuenta o recuperar contraseña */
+  .login-form a {
+    
+    display: inline-block;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    margin-top: 15px;
+    
+  }
+  
+  .login-form a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  /* Estilo para las etiquetas */
+  .login-form label {
+    font-size: 14px;
+    color: #000000;
+  }
+  

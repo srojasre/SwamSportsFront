@@ -4,13 +4,14 @@ import { ActivatedRoute } from '@angular/router';
 import { ProductoService } from '../producto.service';
 import { CommonModule } from '@angular/common';
 import { ReviewsComponent } from "../reviews/reviews.component";
+import { CatalogoGeneralComponent } from "../catalogo-general/catalogo-general.component";
 
 @Component({
   selector: 'app-producto-detail',
   templateUrl: './producto-detail.component.html',
   styleUrls: ['./producto-detail.component.css'],
   standalone: true,
-  imports: [CommonModule, ReviewsComponent]
+  imports: [CommonModule, ReviewsComponent, CatalogoGeneralComponent]
 })
 export class ProductoDetailComponent implements OnInit {
 

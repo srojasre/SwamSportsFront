@@ -8,6 +8,7 @@
           *ngFor="let producto of productos; let i = index"
         >
           <img [src]="producto.imagenURL" alt="{{producto.nombreProducto}}">
+          <!-- <button class="ver-mas" (click)="[routerLink]="['productos']" routerLinkActive="router-link-active" ">Ver más</button> Importar routerLink y referenciar a /productos/{$id} -->
         </div>
       </div>
       <button class="next" (click)="nextSlide()">&#10095;</button>

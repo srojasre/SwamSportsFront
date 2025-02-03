@@ -22,14 +22,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.01);
   border-radius: 10%;
   box-sizing: border-box;
   padding: 10px; /* Opcional: para agregar espacio interno */
 }
 
 .product:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .product img {
@@ -59,20 +59,15 @@ button.next {
   right: 10px;
 }
 
-button.ver-mas {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #007BFF; /* Puedes personalizar el color */
-  padding: 10px 20px;
-  border-radius: 5px;
-}
+.ver-mas{
 
-button:hover {
-  background-color: rgba(0, 0, 0, 0.844);
-}
+  background-color: transparent;
+  color: black;
+  font-family: 'Chillax-font';
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-items: center;
+  
 
-button.ver-mas:hover {
-  background-color: #0056b3; /* Color al pasar el cursor */
 }
